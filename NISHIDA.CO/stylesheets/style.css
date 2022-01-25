@@ -90,16 +90,22 @@ img {
   opacity: 0.5;
   text-decoration: none; 
 }
-.p-ranking__data {
+.c-item__data {
   color: #000;
   display: flex;
   flex-direction: column;
-  
+}
+.c-slick__data {
+  display: flex;
+  flex-direction: column;
+}
+.c-slick__data >span:not(:first-child) {
+  padding-top: 5px;
 }
 
 @media screen and (max-width: 768px) {
   /* SP style */
-  .p-headerPC {
+  .p-headerPC{
     display: none;
   }
   .slick-next, .slick-arrow {
@@ -146,6 +152,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
   }
   /*nav*/
   .nav {
@@ -171,12 +178,14 @@ img {
     overflow-x: hidden;
     }
     .menu {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    z-index: 3;
-    border:none;
+      display: block;
+      width: 20px;
+      height: 20px;
+      padding: 25px;
+      position: relative;
+      z-index: 3;
+      border: none;
+      order: 1;
     }
     .menu span {
     width: 30px;
@@ -306,8 +315,7 @@ img {
   .l-footerPC__snsLinkOpen2 {
     margin-top: 20px;
   }
-   /*ナビの中身*/
-
+  /*ナビの中身*/
   .c-nav__search {
     position: relative;
     margin: 0;
@@ -411,15 +419,8 @@ img {
   .c-slick img {
     margin: 0 auto;
   }
-  .p-slick__textBox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .c-slick__data {
     padding-top: 10px;
-    
-  }
-  .p-slick__textBox {
-    margin: 0 auto;
   }
 /*スリックSP*/
   .p-ranking {
@@ -460,8 +461,8 @@ img {
     line-height: 21px;
     font-size: 41px;
   }
-  .p-ranking__data {
-    margin-top: 10px;
+  .c-item__data {
+    margin-top: 20px;
     font-size: 16px;
   }
   /*.p-ranking__item:not(:nth-child(4n)) {
@@ -584,7 +585,7 @@ img {
 }
 @media screen and (min-width: 769px) {
   /* ppcPC style */
-  .l-headerSP {
+  .l-headerSP ,.globalMenuSp{
     display: none;
   }
   .menu {
@@ -757,14 +758,7 @@ img {
     opacity: 0.5;
     text-decoration: none; 
   }
-  .c-slick__text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 34px;
-    font-size: 14px;
-  }
-  .p-slick__textBox {
+  .c-slick__data {
     padding-top: 10px;
   }
   .c-viewMore__button {
@@ -815,7 +809,7 @@ img {
     background-color: #c9c9c9; 
     text-decoration: none; 
   }
-  .p-ranking__data {
+  .c-item__data {
     margin: 15px 0 0 20px;
     font-size: 16px;
   }
