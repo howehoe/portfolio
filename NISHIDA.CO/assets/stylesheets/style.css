@@ -609,7 +609,7 @@ img {
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
   }
   .p-hederPC__only {
     display: flex;
