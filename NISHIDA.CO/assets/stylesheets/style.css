@@ -421,6 +421,8 @@ img {
   }
   .c-slick__data {
     padding-top: 10px;
+    justify-content: center;
+    align-items: center;
   }
 /*スリックSP*/
   .p-ranking {
