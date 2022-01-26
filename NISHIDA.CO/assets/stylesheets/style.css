@@ -1,6 +1,6 @@
 @charset "UTF-8";
-body  {
-  counter-reset:      cnt;
+body {
+  counter-reset: cnt;
 }
 img {
   max-width: 100%;
@@ -12,41 +12,41 @@ img {
   justify-content: space-between;
   display: flex;
 }
-.c-nav__logo:hover{
-  color: #000; 
+.c-nav__logo:hover {
+  color: #000;
   opacity: 0.5;
-  text-decoration: none; 
+  text-decoration: none;
 }
-.c-nav__shopping:hover{
+.c-nav__shopping:hover {
   opacity: 0.5;
-  text-decoration: none; 
+  text-decoration: none;
 }
 /*ピックアップホバー*/
 .p-pickUp__item {
-	overflow:		hidden;
-	position:		relative;	/* 相対位置指定 */
+  overflow: hidden;
+  position: relative; /* 相対位置指定 */
 }
 .p-pickUp__item .caption {
-	font-size:		130%;
-	text-align: 		center;
-	color:			#fff;
+  font-size: 130%;
+  text-align: center;
+  color: #fff;
 }
 .p-pickUp__item .mask {
   align-items: center;
   justify-content: center;
   display: flex;
-	width:			100%;
-	height:			100%;
-	position:		absolute;	/* 絶対位置指定 */
-	top:			0;
-	left:			0;
-	opacity:		0;	/* マスクを表示しない */
-	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
-	-webkit-transition:	all 0.2s ease;
-	transition:		all 0.2s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute; /* 絶対位置指定 */
+  top: 0;
+  left: 0;
+  opacity: 0; /* マスクを表示しない */
+  background-color: rgba(0, 0, 0, 0.4); /* マスクは半透明 */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .p-pickUp__item:hover .mask {
-	opacity:		1;	/* マスクを表示する */
+  opacity: 1; /* マスクを表示する */
 }
 /*ピックアップホバー*/
 .p-reccomend {
@@ -75,9 +75,9 @@ img {
   text-align: center;
 }
 .c-viewMore__button:hover {
-  color: #000; 
-  background-color: #c9c9c9; 
-  text-decoration: none; 
+  color: #000;
+  background-color: #c9c9c9;
+  text-decoration: none;
 }
 .c-viewMore__button {
   font-size: 17px;
@@ -85,10 +85,10 @@ img {
   background: #b4b4b4;
   border-color: #b4b4b4;
 }
-.p-ranking__link:hover{
-  color: #000; 
+.p-ranking__link:hover {
+  color: #000;
   opacity: 0.5;
-  text-decoration: none; 
+  text-decoration: none;
 }
 .c-item__data {
   color: #000;
@@ -99,16 +99,17 @@ img {
   display: flex;
   flex-direction: column;
 }
-.c-slick__data >span:not(:first-child) {
+.c-slick__data > span:not(:first-child) {
   padding-top: 5px;
 }
 
 @media screen and (max-width: 768px) {
   /* SP style */
-  .p-headerPC{
+  .p-headerPC {
     display: none;
   }
-  .slick-next, .slick-arrow {
+  .slick-next,
+  .slick-arrow {
     display: none !important;
   }
   .slick-next {
@@ -167,27 +168,27 @@ img {
     min-height: 100vh;
     color: #fff;
     background-color: #ff8636;
-    transition: .3s;
+    transition: 0.3s;
     transform: translateX(-110%);
     transition: transform 500ms 0s ease;
     transition: transform 500ms 0s ease;
     z-index: 100;
-    }
-    .c-navSP__wrap.open {
+  }
+  .c-navSP__wrap.open {
     transform: translateX(0%);
     overflow-x: hidden;
-    }
-    .menu {
-      display: block;
-      width: 20px;
-      height: 20px;
-      padding: 25px;
-      position: relative;
-      z-index: 3;
-      border: none;
-      order: 1;
-    }
-    .menu span {
+  }
+  .menu {
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 25px;
+    position: relative;
+    z-index: 3;
+    border: none;
+    order: 1;
+  }
+  .menu span {
     width: 30px;
     height: 3px;
     display: block;
@@ -195,18 +196,18 @@ img {
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
-    }
-    .menu span:nth-child(1) {
-      top: 13px;
-    }
-    .menu span:nth-child(2) {
-      top: 50%;
-      transform: translate(-50%,-50%);
-    }
-    .menu span:nth-child(3) {
-      bottom: 13px;
-    }
-    .closeButton {
+  }
+  .menu span:nth-child(1) {
+    top: 13px;
+  }
+  .menu span:nth-child(2) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .menu span:nth-child(3) {
+    bottom: 13px;
+  }
+  .closeButton {
     display: inline-block;
     vertical-align: middle;
     color: #fff;
@@ -215,9 +216,9 @@ img {
     height: 0.1em;
     background: currentColor;
     transform: rotate(45deg);
-    }
-    .closeButton::before {
-    content: '';
+  }
+  .closeButton::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -225,7 +226,7 @@ img {
     height: 100%;
     background: inherit;
     transform: rotate(90deg);
-    }
+  }
   /*nav*/
   /*ナビの中身*/
   .c-navSP__header {
@@ -292,7 +293,7 @@ img {
   }
   .c-navSP__link {
     display: block;
-    margin-top:40px ;
+    margin-top: 40px;
     color: #fff;
     margin-left: 20px;
   }
@@ -407,7 +408,7 @@ img {
     margin-top: 0;
     padding: 75px 0 55px;
   }
-/*スリックSP*/
+  /*スリックSP*/
   .c-slick {
     margin: 20px auto;
     position: relative;
@@ -424,7 +425,7 @@ img {
     justify-content: center;
     align-items: center;
   }
-/*スリックSP*/
+  /*スリックSP*/
   .p-ranking {
     padding: 60px 0;
     border-top: 1px solid #b4b4b4;
@@ -447,7 +448,7 @@ img {
     position: relative;
     display: block;
     text-decoration: none;
-    counter-increment:   cnt;
+    counter-increment: cnt;
   }
   .p-ranking__link:before {
     content: counter(cnt);
@@ -466,6 +467,9 @@ img {
   .c-item__data {
     margin-top: 20px;
     font-size: 16px;
+  }
+  .c-item__data > span:not(:first-child) {
+    padding-top: 5px;
   }
   /*.p-ranking__item:not(:nth-child(4n)) {
     margin-right: 0;
@@ -510,7 +514,6 @@ img {
   .flowbtn10 .fa-instagram,
   .flowbtn10 .fa-line {
     font-size: 25px;
-    
   }
   /* Twitterマウスホバー時 */
   .flowbtn10 .fa-twitter:hover {
@@ -558,7 +561,7 @@ img {
     font-size: 14px;
   }
   .rowSpace {
-    padding-top:20px ;
+    padding-top: 20px;
   }
   .c-company {
     text-align: center;
@@ -577,7 +580,7 @@ img {
 @media screen and (max-width: 980px) {
   .c-slick__text {
     font-size: 20px !important;
-}
+  }
   .c-slick__text {
     left: 50px !important;
   }
@@ -587,7 +590,8 @@ img {
 }
 @media screen and (min-width: 769px) {
   /* ppcPC style */
-  .l-headerSP ,.globalMenuSp{
+  .l-headerSP,
+  .globalMenuSp {
     display: none;
   }
   .menu {
@@ -605,11 +609,10 @@ img {
   .l-footerSP {
     display: none;
   }
-  .c-nav__search{
+  .c-nav__search {
     display: none;
   }
   .l-header {
-    
     width: 100%;
   }
   .p-headerPC {
@@ -657,11 +660,11 @@ img {
     padding-left: 10px;
     color: #ffffff;
   }
-  .c-nav__pcItem:hover{
-    color: #fff; 
+  .c-nav__pcItem:hover {
+    color: #fff;
     opacity: 0.5;
     text-decoration: none;
-}
+  }
   /*検索フォーム*/
   .c-search_container {
     box-sizing: border-box;
@@ -756,9 +759,9 @@ img {
   .c-slick__slider div {
     margin: 10px;
   }
-  .c-slick__slider img:hover{
+  .c-slick__slider img:hover {
     opacity: 0.5;
-    text-decoration: none; 
+    text-decoration: none;
   }
   .c-slick__data {
     padding-top: 10px;
@@ -806,10 +809,10 @@ img {
   .p-ranking__image {
     padding: 20px 20px 14px 20px;
   }
-  .p-ranking__image :hover{
-    color: #000; 
-    background-color: #c9c9c9; 
-    text-decoration: none; 
+  .p-ranking__image :hover {
+    color: #000;
+    background-color: #c9c9c9;
+    text-decoration: none;
   }
   .c-item__data {
     margin: 15px 0 0 20px;
@@ -819,10 +822,10 @@ img {
     position: relative;
     display: block;
     text-decoration: none;
-    counter-increment:   cnt;
+    counter-increment: cnt;
   }
   .p-ranking__link:before {
-    content:            counter( cnt );
+    content: counter(cnt);
     position: absolute;
     left: 2px;
     top: -25px;
@@ -854,10 +857,10 @@ img {
     font-size: 12px;
     padding-top: 10px;
   }
-  .l-footerPC__link a:hover{
-    color: #fff; 
+  .l-footerPC__link a:hover {
+    color: #fff;
     opacity: 0.5;
-    text-decoration: none; 
+    text-decoration: none;
   }
   .l-footerPC__link ul {
     width: 100%;
@@ -889,7 +892,6 @@ img {
   .flowbtn10 .fa-get-pocket,
   .flowbtn10 .fa-line {
     font-size: 25px;
-    
   }
   /* Twitterマウスホバー時 */
   .flowbtn10 .fa-twitter:hover {
