@@ -64,9 +64,10 @@ body {
   cursor: pointer;
 }
 .p-lineUp__text {
-  color: #fbdcb9;
-  font-family: "Titillium Web", sans-serif;
   letter-spacing: 2px;
+}
+.p-lineUp__viewMore {
+  margin-bottom: 100px;
 }
 /*lineUp */
 .p-news {
