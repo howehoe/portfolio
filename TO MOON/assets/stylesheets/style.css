@@ -34,6 +34,7 @@
 /*pager*/
 /*scrollify*/
 body {
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
@@ -42,15 +43,18 @@ body {
 }
 /*lineUp */
 .p-lineUP__container {
-  width: 100%;
-  max-width: 390px;
   text-align: center;
   height: 100%;
   position: relative;
-  perspective: 1000px;
   transform-style: preserve-3d;
   display: flex;
   align-items: center;
+}
+.rocket {
+  margin: auto;
+  
+  position: absolute;
+  cursor: pointer;
 }
 .rocket__image {
   height: 420px;
@@ -63,12 +67,6 @@ body {
   color: #fbdcb9;
   font-family: "Titillium Web", sans-serif;
   letter-spacing: 2px;
-}
-.rocket {
-  margin: auto;
-  width: 100%;
-  position: absolute;
-  cursor: pointer;
 }
 /*lineUp */
 .p-news {
@@ -171,9 +169,23 @@ body {
     transform: translateY(3%) !important;
     z-index: 100;
   }
-  ..p-lineUp {
+  /*lineUpSP*/
+  .p-lineUp {
     width: 100%;
   }
+  .p-lineUP__container {
+    width: 80%;
+    max-width: 390px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    perspective: 700px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*lineUpSP*/
   /*news*/
   .p-news {
     max-width: 1200px;
@@ -508,6 +520,20 @@ body {
   }
   /*SNS*/
   /*ナビメニュー*/
+  /*lineUpPC*/
+  .p-lineUP__container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    /*lineUpPC*/
   /*news*/
   .p-news {
     width: 100%;
