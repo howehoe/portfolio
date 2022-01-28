@@ -181,16 +181,13 @@ body {
     width: 100%;
   }
   .p-lineUP__container {
-    width: 70vw;
+    width: 80%;
     max-width: 390px;
     text-align: center;
     height: 100%;
     position: relative;
     perspective: 700px;
     transform-style: preserve-3d;
-    transform: translate3d(-50%,-50%,600px);
-    top: 38%;
-    left: 38%;
     display: flex;
     align-items: center;
     justify-content: center;
