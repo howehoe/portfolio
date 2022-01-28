@@ -166,7 +166,7 @@ body {
   }
   .p-headerLogo {
     line-height: 50px;
-    padding-left: 15px;
+    margin-left: 15px;
   }
   .p-headerLogo__image {
     height: 50px;
@@ -472,7 +472,7 @@ body {
   }
   .p-headerLogo {
     display: inline-block;
-    padding-left: 40px;
+    margin-left: 40px;
   }
   .p-headerLogo__link {
     display: inline-block;
