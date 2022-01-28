@@ -1,0 +1,97 @@
+<div class="p-lineUP__container">
+  <div id="rocket1" class="rocket">
+    <img src="https://placehold.jp/200x200.png">
+    <h3 class="p-lineUp__text">Sample</h3>
+  </div>
+  <div id="rocket2" class="rocket">
+    <img src="https://placehold.jp/200x200.png">
+    <h3 class="p-lineUp__text">Sample</h3>
+  </div>
+  <div id="rocket3" class="rocket">
+    <img src="https://placehold.jp/200x200.png">
+    <h3 class="p-lineUp__text">Sample</h3>
+  </div>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.p-lineUP__container {
+  width: 70vw;
+  max-width: 300px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  position: relative;
+  perspective: 1000px;
+  transform: translate3d(-50%,-50%,600px);
+  /* ^^^ 600px for safari hack */
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.p-lineUp__text {
+  color: #fbdcb9;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 2px;
+}
+
+.rocket {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    cursor: pointer; 
+}
+</style>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script>
+$(".rocket").click(function() {
+   $('.p-lineUP__container').attr("rocket-center", this.id);
+   if (this.id == "rocket1") centerrocket1();
+   if (this.id == "rocket2") centerrocket2();
+   if (this.id == "rocket3") centerrocket3();
+
+});
+
+
+function centerrocket1() { 
+   var tl = new TimelineMax()
+   .to('#rocket1', 1, {xPercent: 0, z: 1}, 0)
+   .to('#rocket2', 1, {xPercent: 140, z: -800}, 0)
+   .to('#rocket3', 1, {xPercent: -140, z: -800}, 0)
+   
+}
+
+function centerrocket2() {
+   var tl = new TimelineMax()
+   .to('#rocket1', 1, {xPercent: -140, z: -800}, 0)
+   .to('#rocket2', 1, {xPercent: 0, z: 1}, 0)
+   .to('#rocket3', 1, {xPercent: 140, z: -800}, 0);
+}
+
+function centerrocket3() {
+   var tl = new TimelineMax()
+   .to('#rocket1', 1, {xPercent: 140, z: -800}, 0)
+   .to('#rocket2', 1, {xPercent: -140, z: -800}, 0)
+   .to('#rocket3', 1, {xPercent: 0, z: 1}, 0);
+}
+
+
+$(function() {
+  centerrocket2();
+})
+</script>
