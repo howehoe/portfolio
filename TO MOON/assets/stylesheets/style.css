@@ -131,7 +131,13 @@ body {
 .p-footer__sns a {
   color: #cccccc;
 }
-
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+::i-block-chrome, .css_selector {
+position: absolute;
+top: 15px;
+text-align: center;
+}
+}
 @media screen and (max-width: 768px) {
   /* SP style */
   .c-nav {
