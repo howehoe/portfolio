@@ -138,15 +138,17 @@ body {
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 400px) {
   .rocket__image {
     height: auto;
     /* height: 420px; */
-    width: 100px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 390px;
     max-height: 100%;
     cursor: pointer;
   }
+}
+@media screen and (max-width: 768px) {
   /* SP style */
   .c-nav {
     display: none;
