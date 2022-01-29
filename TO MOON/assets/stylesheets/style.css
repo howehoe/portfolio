@@ -139,6 +139,14 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .rocket__image {
+    height: auto;
+    /* height: 420px; */
+    width: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+  }
   /* SP style */
   .c-nav {
     display: none;
