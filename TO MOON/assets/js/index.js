@@ -65,20 +65,20 @@ $(".rocket").click(function() {
 function centerrocket1() { 
   var tl = new TimelineMax()
   .to('#rocket1', 1, {xPercent: 0, z: 1}, 0)
-  .to('#rocket2', 1, {xPercent: 100, z: -1000}, 0)
-  .to('#rocket3', 1, {xPercent: -100, z: -1000}, 0)
+  .to('#rocket2', 1, {xPercent: 140, z: -1000}, 0)
+  .to('#rocket3', 1, {xPercent: -140, z: -1000}, 0)
 }
 
 function centerrocket2() {
   var tl = new TimelineMax()
-  .to('#rocket1', 1, {xPercent: -100, z: -1000}, 0)
+  .to('#rocket1', 1, {xPercent: -140, z: -1000}, 0)
   .to('#rocket2', 1, {xPercent: 0, z: 1}, 0)
-  .to('#rocket3', 1, {xPercent: 100, z: -1000}, 0);
+  .to('#rocket3', 1, {xPercent: 140, z: -1000}, 0);
 }
 function centerrocket3() {
   var tl = new TimelineMax()
-  .to('#rocket1', 1, {xPercent: 100, z: -1000}, 0)
-  .to('#rocket2', 1, {xPercent: -100, z: -1000}, 0)
+  .to('#rocket1', 1, {xPercent: 140, z: -1000}, 0)
+  .to('#rocket2', 1, {xPercent: -140, z: -1000}, 0)
   .to('#rocket3', 1, {xPercent: 0, z: 1}, 0);
 }
 
