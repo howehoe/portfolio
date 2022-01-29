@@ -143,9 +143,26 @@ body {
     height: auto;
     /* height: 420px; */
     width: 100%;
-    max-width: 390px;
+    max-width: 100px;
     max-height: 100%;
     cursor: pointer;
+  }
+  .p-lineUP__container {
+    width: 25% !important;
+    max-width: 390px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+    perspective: 700px;
+    transform-style: preserve-3d;
+  }
+  .c-pager__list > li > a {
+  background: #fff;
+  border: solid 1px #000;
+  border-radius: 50%;
+  display: block;
+  height: 20px;
+  width: 20px;
   }
 }
 @media screen and (max-width: 768px) {
