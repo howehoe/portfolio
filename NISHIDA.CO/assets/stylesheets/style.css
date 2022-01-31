@@ -285,6 +285,7 @@ img {
   }
   .c-search_container2 input[type="text"] {
     border: none;
+    color: #000;
     height: 2em;
     width: 93%;
   }
