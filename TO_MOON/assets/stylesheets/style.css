@@ -220,7 +220,7 @@ body {
     text-align: center;
     height: 100%;
     position: relative;
-    perspective:1000px;
+    perspective:500px;
     transform-style: preserve-3d;
     display: flex;
     align-items: center;
