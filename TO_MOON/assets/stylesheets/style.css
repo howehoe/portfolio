@@ -142,19 +142,25 @@ body {
   .rocket__image {
     height: auto;
     /* height: 420px; */
-    width: 100%;
-    max-width: 100px;
+    width: 250px;
+    max-width: 100%;
     max-height: 100%;
     cursor: pointer;
   }
   .p-lineUP__container {
-    width: 25% !important;
-    max-width: 390px;
+    width: 70vw !important;
+    max-width: 300px;
     text-align: center;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
     position: relative;
-    perspective: 700px;
+    perspective: 1000px;
+    transform: translate3d(-70%,-70%,600px);
+    /* ^^^ 600px for safari hack */
     transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
   }
   .c-pager__list > li > a {
   background: #fff;
@@ -436,7 +442,7 @@ body {
   }
   .c-navSP__wrap.open {
     overflow-y: hidden;
-    transform: translateY(3%);
+    transform: translateY(2%);
     z-index: 100;
   }
   .p-navSPList {
