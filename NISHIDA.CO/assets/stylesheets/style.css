@@ -837,6 +837,9 @@ img {
     margin: 15px 0 0 20px;
     font-size: 16px;
   }
+  .c-item__data > span:not(:first-child) {
+    padding-top: 5px;
+}
   .p-ranking__link {
     position: relative;
     display: block;
