@@ -40,7 +40,7 @@ body {
 }
 .p-lineUp {
   flex-flow: column nowrap;
-  transform: translate3d(0, 0, 0);
+  
 }
 /*lineUp */
 .p-lineUP__container {
