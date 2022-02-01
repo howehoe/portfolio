@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*scrollify*/
 .scrollify {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   align-items: center;
   display: flex;
