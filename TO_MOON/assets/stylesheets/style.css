@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*scrollify*/
 .scrollify {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   align-items: center;
   display: flex;
@@ -229,6 +229,7 @@ body {
   /*lineUpSP*/
   /*news*/
   .p-news {
+    width: 100%;
     max-width: 1200px;
     padding-left: 50px;
     padding-right: 15px;
