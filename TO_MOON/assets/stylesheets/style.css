@@ -149,16 +149,18 @@ body {
   }
   .p-lineUP__container {
     width: 70vw !important;
-    max-width: 300px !important;
-    /* text-align: center; */
+    max-width: 300px;
+    text-align: center;
     /* top: 50%;
     left: 50%; */
-    /* height: 100vh; */
+    height: 100vh;
     position: relative;
     perspective: 1000px;
     /* transform: translate3d(-70%,-70%,600px); */
     /* ^^^ 600px for safari hack */
     transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
   }
   .c-pager__list > li > a {
   background: #fff;
