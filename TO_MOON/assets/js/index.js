@@ -1,3 +1,24 @@
+// loading
+$(function() {
+  let h = $(window).height();
+  // $('#contents').css('display','none');
+  $('.c-loading ,.c-animation').height(h).css('display','block');
+});
+$(window).on('load', function () {
+  $('.c-loading').delay(900).fadeOut(800);
+  $('.c-animation').delay(600).fadeOut(300);
+  // $('#contents').css('display', 'block');
+});
+//2.5秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',2500);
+});
+function stopload(){
+  $('#contents').css('display','block');
+  $('.c-loading').delay(900).fadeOut(800);
+  $('.c-animation').delay(600).fadeOut(300);
+}
+// loading
 //hamburger
 $(function(){
   $('.p-menu').on('click', function() {
