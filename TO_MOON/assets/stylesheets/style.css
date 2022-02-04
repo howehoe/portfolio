@@ -280,7 +280,7 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 0;
-    position: relative;
+    /* position: relative; */
   }
   .p-news__title {
     font-size: 30px;
