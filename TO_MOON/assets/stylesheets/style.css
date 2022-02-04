@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*scrollify*/
+.noscroll {
+  overflow: hidden;
+  position: relative;
+}
 .l-main__wrapper {
     height: 100%;
     position: relative;
@@ -275,6 +279,7 @@ body {
   }
   .p-news__title {
     font-size: 30px;
+    letter-spacing: 2px;
   }
   .p-news__list {
     display: flex;
@@ -347,9 +352,11 @@ body {
   }
   .p-footer__share__text {
     font-size: 30px;
+    letter-spacing: 2px;
   }
   .p-footer__share__arrow {
     height: 16px;
+    margin-bottom: 20px;
   }
   .p-footer__share__arrow__image {
     height: 100%;
@@ -365,7 +372,7 @@ body {
   }
   .p-footer__sns__list li {
     height: 70px;
-    margin: 0 15px;
+    margin: 0 5px;
     width: 70px;
   }
   .p-footer__sns a {
@@ -413,9 +420,8 @@ body {
     cursor: pointer;
     display: block !important;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 15px;
     position: relative;
-    right: 30px;
     width: 30px;
     transition: all 0.5s;
     z-index: 3;
@@ -435,6 +441,9 @@ body {
     display: inline-block;
     transition: all 0.5s;
     box-sizing: border-box;
+  }
+  .active {
+    right: 15px;
   }
   .p-menu > span:nth-child(1) {
     top: 13px;
@@ -482,7 +491,7 @@ body {
   }
   .c-navSP__wrap.open {
     overflow-y: hidden;
-    transform: translateY(2%);
+    transform: translateY(25px);
     z-index: 100;
   }
   .p-navSPList {
@@ -492,7 +501,7 @@ body {
     padding-top: 25px;
   }
   .p-navSPList__text {
-    font-size: 40px;
+    font-size: 30px;
   }
   /*share SNS*/
   .p-navSP__share {
