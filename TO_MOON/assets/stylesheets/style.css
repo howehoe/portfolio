@@ -707,8 +707,9 @@ body {
     padding: 0;
   }
   .p-footer__share__text {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 10px;
+    letter-spacing: 3px;
   }
   .p-footer__share__arrow {
     margin-bottom: 10px;
@@ -726,7 +727,7 @@ body {
   }
   .p-footer__sns__list li {
     height: 60px;
-    margin: 0 15px;
+    margin: 0 10px;
     width: 60px;
   }
   /*share*/
