@@ -9,7 +9,6 @@ $(window).on('load', function () {
   $('.c-animation').delay(600).fadeOut(300);
   // $('#contents').css('display', 'block');
 });
-//2.5秒たったら強制的にロード画面を非表示
 $(function(){
   setTimeout('stopload()',2500);
 });
@@ -24,7 +23,7 @@ $(function(){
   $('.p-menu').on('click', function() {
     $('.p-menu').toggleClass('active');
     $('.c-navSP__wrap').toggleClass('open');
-    $('body').toggleClass('noscroll');
+    $('body, html').toggleClass('noscroll');
     return false;
   });
 });
@@ -37,7 +36,7 @@ let option ={
   easing: 'swing',
   scrollSpeed: 600,
   updateHash: false,
-  interstitialSection : ".l-header,.l-footer",
+  interstitialSection : ".l-footer",
   before:function(index) {
     pagerCurrent(index);
   },

@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*scrollify*/
-.noscroll {
+/* .noscroll {
   overflow: hidden;
   position: relative;
-}
+} */
 .l-main__wrapper {
     height: 100%;
     position: relative;
@@ -122,7 +122,10 @@ body {
   background: #fff;
   box-shadow: 0 5px 10px rgb(0 0 0 / 6%);
   display: flex;
-  /*position: fixed;*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
 }
 .c-nav {
@@ -495,6 +498,7 @@ body {
   }
   .p-navSPList {
     display: block;
+    text-align: center;
   }
   .p-navSPList__item:not(:first-child) {
     padding-top: 25px;
@@ -505,6 +509,7 @@ body {
   /*share SNS*/
   .p-navSP__share {
     margin-top: 20px;
+    text-align: center;
   }
   .p-navSP__sns__list {
     display: flex;
@@ -550,6 +555,7 @@ body {
     display: flex;
     height: 60px;
     justify-content: space-between;
+    z-index: 100;
   }
   .p-headerLogo {
     display: inline-block;
