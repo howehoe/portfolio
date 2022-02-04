@@ -491,7 +491,7 @@ body {
   }
   .c-navSP__wrap.open {
     overflow-y: hidden;
-    transform: translateY(25px);
+    transform: translateY(30px);
     z-index: 100;
   }
   .p-navSPList {
