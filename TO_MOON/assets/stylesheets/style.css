@@ -39,7 +39,7 @@
   width: 10px;
 }
 .is__current > a {
-  background: #232323 !important;
+  background: #518bc8 !important;
 }
 /*pager*/
 /*scrollify*/
@@ -477,7 +477,7 @@ body {
   }
   .c-navSP__wrap {
     align-items: center;
-    background-color: #ff8636;
+    background-color: #33485E;
     color: #fff;
     display: flex;
     flex-flow: column nowrap;
@@ -536,7 +536,7 @@ body {
     text-decoration: none;
   }
   .p-navSP__sns a {
-    color: #ff8636;
+    color: #33485E;
     font-size: 25px;
   }
   /*navSPメニュー*/
