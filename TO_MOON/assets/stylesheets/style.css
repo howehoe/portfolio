@@ -483,7 +483,6 @@ body {
     width: 100%;
     height: 100%;
     justify-content: center;
-    /* min-height: 100vh; */
     transition: 0.3s;
     transform: translateY(-110%);
     transition: transform 500ms 0s ease;
@@ -491,7 +490,7 @@ body {
   }
   .c-navSP__wrap.open {
     overflow-y: hidden;
-    transform: translateY(30px);
+    transform: translateY(25px);
     z-index: 100;
   }
   .p-navSPList {
