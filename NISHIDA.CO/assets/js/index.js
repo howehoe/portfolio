@@ -1,5 +1,5 @@
 
-<script type="text/javascript">
+/* slick */
   $(document).on('ready', function() {
     $(".c-slick__slider").slick({
       arrows:true,
@@ -24,4 +24,32 @@
       ],
     });
   });
-</script>
+/* slick */
+/* navigation */
+  $(document).ready(function(){
+    $('.menu').on('click',function(){
+      $('.c-navSP__wrap').addClass('open');
+      $('body').addClass('noscroll');
+    });
+    $('.closeButton').on('click',function(){
+      $('.c-navSP__wrap').removeClass('open');
+      $('body').removeClass('noscroll');
+    });
+  });
+/* navigation */
+/* floatingBanner */
+$(function () {
+  var display = function () {
+  if ($(this).scrollTop() > 150) {
+          $(".c-floatingBanner").fadeIn();
+      } else {
+          $(".c-floatingBanner").fadeOut();
+      }
+  };
+  $(window).on("scroll", display);
+  //close>click
+  $(".c-floatingBanner__closeButton").on('click',function(){
+    $('.c-floatingBanner').toggleClass('__close');
+  });
+});
+/* floatingBanner */
