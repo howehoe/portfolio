@@ -1,0 +1,194 @@
+@charset "UTF-8";
+#header {
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 6%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#icon {
+  width: 100px;
+}
+#topIcon {
+  width: 100%;
+}
+#navList {
+  align-items: center;
+  display: flex;
+}
+#navList li a {
+  font-weight: bold;
+  position: relative;
+}
+#wrapper {
+
+}
+#introduction {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+#introductionContents {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 13%, rgba(64, 64, 64, 1) 53%, rgba(85, 85, 85, 1));
+  box-shadow: 0 30px 50px -20px rgba(85, 85, 85, 1);
+  max-width: 800px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+  .text {
+    display: none;
+  }
+  .text {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+  }
+  .text-stroke {
+    fill: none;
+    stroke: rgba(85, 85, 85, 1);
+    stroke-width: 2.8px;
+    stroke-dashoffset: -900;
+    stroke-dasharray: 900;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    animation: dash 2.5s ease-in-out forwards;
+  }
+  .text-stroke:nth-child(2) {
+    animation-delay: .3s;
+  }
+  .text-stroke:nth-child(3) {
+    animation-delay: .9s;
+  }
+  .text-stroke-2 {
+    stroke: #fff;
+    animation-delay: 1.2s;
+  }
+  .text-stroke:nth-child(5) {
+    animation-delay: 1.5s;
+  }
+  .text-stroke:nth-child(6) {
+    animation-delay: 1.8s;
+  }
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+#viewMore {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  /* left: 57%;
+  position: absolute;
+  top: 90%;
+  transform: translate(-80%, -80%); */
+}
+.viewMoreButton {
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+  line-height: 50px;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+.viewMoreButton:hover {
+  background-color: #fff;
+  border-color: #59b1eb;
+  color: #59b1eb;
+}
+.viewMoreButton::before,
+.viewMoreButton::after {
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #333;
+}
+.viewMoreButton::before {
+  top: 0;
+}
+.viewMoreButton::after {
+  bottom: 0;
+}
+.viewMoreButton:hover::before,
+.viewMoreButton:hover::after {
+  height: 0;
+  background-color: #59b1eb;
+}
+
+@media screen and (max-width: 768px) {
+/* SP style */
+  #header {
+    height: 100px;
+  }
+  #navList li {
+    padding-right: 15px;
+  }
+  #navList li > a  {
+    font-size: 14px;
+  }
+  #navList li a:hover {
+    opacity: 0.5;
+  }
+}/*消さない*/
+
+@media screen and (min-width: 769px) {
+/*PC style*/
+  #header {
+    height: 100px;
+  }
+  #icon {
+    height: 90px;
+    margin-left: 40px;
+    width: 120px;
+  }
+  #icon img {
+    height: 100%;
+    width: 100%;
+  }
+  #navList {
+    padding-right: 60px;
+  }
+  #navList li {
+    padding-right: 30px;
+  }
+  #navList li > a  {
+    font-size: 20px;
+  }
+  /* nav hover */
+  #navList li a::after {
+    content: '';
+    background: #000000;
+    bottom: 4px;
+    position: absolute;
+    height: 2px;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    width: 100%;
+    }
+    #navList li a:hover::after {
+      bottom: -8px;
+      visibility: visible;
+      opacity: 0.5;
+    }
+    #introduction {
+      height: 680px;
+    }
+   /* nav hover */
+    #viewMore {
+      padding-top: 50px;
+      width: 250px;
+    }
+    .viewMoreButton {
+      width: 100%;
+    }
+} /*消さない*/
